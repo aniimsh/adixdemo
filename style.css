@@ -1,0 +1,255 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: Helvetica;
+}
+
+.left-col,
+.right-col {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+}
+
+.left-col {
+  /* background: grey; */
+  background: url(01.png) no-repeat 50% 50%;
+}
+
+.right-col {
+  left: 50%;
+  background: url(02.png) no-repeat 50% 50%;
+}
+
+.upper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  /* background: #4f4538; */
+  /* background: url(next-cover.jpg) no-repeat 50% 50%; */
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 3s;
+}
+
+@media (max-width: 900px) {
+  .left-col {
+    width: 100%;
+  }
+  .right-col {
+    top: 100%;
+    left: 0%;
+    width: 100%;
+  }
+}
+
+.logo {
+  font-family: Poppins;
+  color: #fff;
+  position: fixed;
+  margin: 1.4em;
+  font-weight: bolder;
+  z-index: 1;
+}
+
+/* .cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 50%;
+  background: url(pln0812.png) no-repeat 50% 50%;
+  background-size: cover;
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 2.6s;
+} */
+
+#name {
+  font-weight: bolder;
+}
+
+#metal-frame {
+  font-size: 10px;
+}
+
+.about {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.media {
+  margin-top: 40px;
+}
+
+.data {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+  color: #fce5ff;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* .block-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 50%;
+} */
+
+/* .block-cover::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #4f4538;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2s;
+} */
+
+@keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .upper-block {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+}
+
+.upper-block::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #9a8b78;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2.4s;
+} */
+
+/* .block-bottom {
+  position: absolute;
+  top: 50%;
+  height: 50vh;
+  width: 100%;
+} */
+
+/* .block-bottom::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #000;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 3.6s;
+} */
+
+/* .bottom {
+  left: 50%;
+  background: url(album-art.jpg) no-repeat 50% 50%;
+} */
+.bottom {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  height: 40vh;
+  width: 100%;
+  /* background: url(next-cover.jpg) no-repeat 50% 50%; */
+  /* background-size: cover; */
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 4.2s;
+}
+
+.about h1 {
+  font-weight: bolder;
+  color: #d5dfff;
+  font-family: Poppins;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* .about p {
+  color: #bcac98;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: right;
+} */
+
+/* .about span:hover {
+  text-decoration: underline;
+} */
+
+.social-links p {
+  color: #cae3ff;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: right;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: #fed5fd;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  text-align: center;
+  color: #ffeefd;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
